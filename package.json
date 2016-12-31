@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
-    "prepublish": "./node_modules/eslint/bine/eslint.js . && npm test"
+    "prepublish": "./node_modules/eslint/bin/eslint.js . && npm test"
   },
   "author": "Matt Ross <amsross@gmail.com>",
   "license": "ISC",
