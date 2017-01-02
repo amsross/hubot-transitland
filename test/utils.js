@@ -13,7 +13,7 @@ describe("utils", () => {
   beforeEach(() => {
     msg = {
       "robot": {},
-      "send": sinon.spy(r.T),
+      "reply": sinon.spy(r.T),
     };
     result = {
       "operators": [{
@@ -153,8 +153,8 @@ describe("utils", () => {
         .tap(operator => {
           assert.equal(operator.name, "Caltrain");
           assert.equal(d.get(msg.robot, ["brain", "data", "transitland", "operators", "Caltrain", "name"]), "Caltrain");
-          assert.equal(r.path(["send", "calledOnce"], msg), true, "msg.send was called");
-          assert.equal(r.path(["send", "firstCall", "args", 0], msg), "By \"Caltrain\", I assume you meant \"Caltrain\"");
+          assert.equal(r.path(["reply", "calledOnce"], msg), true, "msg.reply was called");
+          assert.equal(r.path(["reply", "firstCall", "args", 0], msg), "By \"Caltrain\", I assume you meant \"Caltrain\"");
         })
         .done(done);
     });
