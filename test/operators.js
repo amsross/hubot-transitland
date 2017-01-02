@@ -25,7 +25,7 @@ describe("operators", () => {
   });
 
   describe("findOperators", () => {
-    let stubs, findType, findOperator;
+    let stubs, findOperator;
 
     beforeEach(() => {
       stubs = {
