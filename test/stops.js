@@ -26,7 +26,7 @@ describe("stops", () => {
     });
   });
 
-  describe("findStops", () => {
+  describe("findStop", () => {
     let stubs, findStop;
 
     beforeEach(() => {

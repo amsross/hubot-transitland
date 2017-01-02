@@ -28,7 +28,7 @@ describe("schedules", () => {
     });
   });
 
-  describe("findSchedules", () => {
+  describe("findSchedule", () => {
     let stubs, findSchedule;
 
     beforeEach(() => {
